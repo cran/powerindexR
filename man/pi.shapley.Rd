@@ -30,11 +30,10 @@ Alonso-Meijide, J. M., & Bowles, C. (2005). Generating functions for coalitional
 
 Lucas, W. F. (1983). Measuring power in weighted voting systems (pp. 183-238). Springer New York.}
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
 weights<-c(137,85,71,32,9,8,5,2,1) 
 quota<-176
 pi.shapley(quota,weights)
-pi.shapley(quota,weights,partition=c(1,1,2,2,3,3,4,4,4))
 }

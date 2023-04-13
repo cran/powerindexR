@@ -13,12 +13,11 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{powerindexR}
 \packageIndices{powerindexR}
-This R package allows the determination of some distributions of the voters' power when passing laws in weighted voting situations.
+This R package allows the determination of some distributions of the voters' 
+power when passing laws in weighted voting situations.
 }
 \author{
-\packageAuthor{powerindexR}
-
-Maintainer: \packageMaintainer{powerindexR}
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \references{
 Alonso-Meijide, J. M., & Bowles, C. (2005). Generating functions for coalitional power indices: An application to the IMF. Annals of Operations Research, 137, 21-44. <https://doi.org/10.1007/s10479-005-2242-y>.

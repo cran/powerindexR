@@ -30,7 +30,7 @@ Logical option to obtain the Quasi-Minimal Winning Coalitions.
 Johnston, R. J. (1978). On the measurement of power: Some reactions to Laver. Environment and Planning A, 10(8), 907-914.
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 
 \examples{

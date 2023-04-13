@@ -30,7 +30,7 @@ Logical option to obtain the Minimal Winning Coalitions.
 Colomer, J. M., & Martinez, F. (1995). The paradox of coalition trading. Journal of Theoretical Politics, 7(1), 41-63.
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 
 \examples{

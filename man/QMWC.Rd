@@ -24,7 +24,7 @@ Numerical vector of dimension \eqn{n} that indicates the weights of \eqn{n} agen
 \item{Quasi-Minimal Winning Coalitions}{Each row indicates a binary representation of each Quasi-Minimal Winning Coalition.}
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
 weights<-c(137,85,71,32,9,8,5,2,1) 

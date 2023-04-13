@@ -10,7 +10,7 @@ This function determines the minimal winning coalitions in a weighted majority g
 MWC(quota, weights)
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \arguments{
 \item{quota}{

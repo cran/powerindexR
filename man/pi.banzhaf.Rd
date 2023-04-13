@@ -36,12 +36,11 @@ Alonso-Meijide, J. M., & Bowles, C. (2005). Generating functions for coalitional
 Brams, S. J., & Affuso, P. J. (1976). Power and size: A new paradox. Theory and Decision, 7(1-2), 29-56.
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
 weights<-c(137,85,71,32,9,8,5,2,1) 
 quota<-176
 pi.banzhaf(quota,weights)
 pi.banzhaf(quota,weights,normalized=TRUE)
-pi.banzhaf(quota,weights,partition=c(1,1,2,2,3,3,4,4,4))
 }

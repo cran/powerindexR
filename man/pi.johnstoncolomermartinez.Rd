@@ -26,7 +26,7 @@ Colomer, J. M., & Martinez, F. (1995). The paradox of coalition trading. Journal
 Johnston, R. J. (1978). On the measurement of power: Some reactions to Laver. Environment and Planning A, 10(8), 907-914.
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
 weights<-c(137,85,71,32,9,8,5,2,1) 

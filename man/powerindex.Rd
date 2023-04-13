@@ -52,16 +52,13 @@ Johnston, R. J. (1978). On the measurement of power: Some reactions to Laver. En
 Lucas, W. F. (1983). Measuring power in weighted voting systems (pp. 183-238). Springer New York.
 }
 \author{
-Livino M. Armijos-Toro, Alejandro Saavedra-Nieves.
+Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
 weights<-c(137,85,71,32,9,8,5,2,1) 
 quota<-176
 powerindex(quota,weights,index="S")
-powerindex(quota,weights,index="S",partition=c(1,1,2,2,3,3,4,4,4))
 powerindex(quota,weights,index="B",swing=TRUE)
 powerindex(quota,weights,index="B",partition=c(1,1,2,2,3,3,4,4,4),swing=TRUE)
 powerindex(quota,weights,index="J",quasiminimal=TRUE)
-powerindex(quota,weights,index="CM",minimal=TRUE)
-powerindex(quota,weights,index="JCM")
 }
