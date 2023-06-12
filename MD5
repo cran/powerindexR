@@ -1,4 +1,4 @@
-2ce0f28d08b10444be4f54acce03e51f *DESCRIPTION
+ee8edea86e594a38df3688b18e998722 *DESCRIPTION
 c03e9b38dcee33047aa0e2f50af71c71 *NAMESPACE
 d2089124f01b28af4c8ad3b5be034ec6 *R/MWC.R
 62cc764065b9a331732123ffffb98013 *R/QMWC.R
@@ -6,13 +6,13 @@ a796970a2d788b9961e8d2614ca190bd *R/check.subset.R
 34a2530da6be43cf4f0cabcce59fac83 *R/multiply1.R
 3398a5b5a9eda173b79a78a99d9cf7f8 *R/multiply2.R
 df8a280575b4f0c2b2a90de17ab3f6d2 *R/numero.coalition.R
-e4f7d61ccaed598bdbbb3cd93844148a *R/pi.banzhaf.R
+820900076ef8c4188f9fcf8fe5783dd0 *R/pi.banzhaf.R
 a9d3469e70fb1fdb1cfee843398f9acf *R/pi.colomermartinez.R
 2076e504d4b4407b36fcca688b22bed5 *R/pi.johnston.R
 7a06d271822f82165842cb8bb7247888 *R/pi.johnstoncolomermartinez.R
 0227efaf312bb5c592c4279917ed926f *R/pi.shapley.R
 eeb6ff34d6d8124abc35e70f799d83c5 *R/powerindex.R
-d9434199f00a02ddac7e3fb9b9929d75 *build/partial.rdb
+dc210448f7b6d6530a4826aebf88f205 *build/partial.rdb
 8bd0de9a43b0dd97f1c9ab959f6b0140 *man/MWC.Rd
 7436a9d06666228c1327438495c18296 *man/QMWC.Rd
 5e5bc65096e6d80ce4c80536595a553f *man/pi.banzhaf.Rd
