@@ -38,13 +38,13 @@ pi.banzhaf <-
       }
       
       ik<-length(vector.weight.union)
-      
+      if (ik>0){
       for(j in 1:ik){
         i0<-round(vector.weight.union[j])
         coef0[(il+j),(i0+1)]<-1
         coef0[(il+j),1]<-1
       }
-      
+      }
       
       
       p1<-coef0[1,]
