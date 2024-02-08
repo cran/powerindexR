@@ -1,4 +1,1 @@
-import(CoopGame)
-export("powerindex", "pi.shapley", "pi.banzhaf", "pi.johnston",
-       "pi.colomermartinez", "pi.johnstoncolomermartinez", "MWC",
-       "QMWC")
+export("powerindex","pi.shapley","pi.banzhaf","pi.johnston","pi.colomermartinez","pi.johnstoncolomermartinez","MWC","QMWC")

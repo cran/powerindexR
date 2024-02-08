@@ -33,7 +33,14 @@ Lucas, W. F. (1983). Measuring power in weighted voting systems (pp. 183-238). S
 Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
+# Example Shapley value
 weights<-c(137,85,71,32,9,8,5,2,1) 
 quota<-176
 pi.shapley(quota,weights)
+
+# Example Owen value
+quota<-30
+weights<-c(28, 16, 5, 4, 3, 3)
+# Partition={{1},{2,4,6},{3,5}}
+pi.shapley(quota,weights,partition=c(1,2,3,2,3,2))
 }

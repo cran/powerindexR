@@ -1,0 +1,11 @@
+binary.digit<-function(x,n){
+  xdigit<-array(0,dim=(n+1))
+  sw<-"TRUE" 
+  a1<-x
+  ij<-0
+  while(ij<(n+1)){
+    ij<-ij+1
+    xdigit[ij]<-a1-floor(a1/2)*2
+    a1<-floor(a1/2)}
+  xdigit
+}

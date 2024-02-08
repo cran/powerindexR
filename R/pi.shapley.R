@@ -1,23 +1,29 @@
 pi.shapley <-
 function(quota,weights,partition=NULL){
+  
+if (sum(weights)<quota){
+  stop("The quota is greater than the sum of the weights. Please, introduce valid parameters.")
+}
+  
+if (round(quota,5)==0){
+  stop("The quota is zero. Please, introduce valid parameters.")
+}
 
 partition0<-partition
 n<-length(weights)
 if (missing(partition)){partition<-1:n}
-
 np<-max(partition)
-tam.union<-c()
-weight.union<-c()
-for(i in 1:np){
-tam.union[i]<-length(which(partition==i))
-weight.union[i]<-sum(weights[which(partition==i)])
-}
+tam.union<- sapply(1:n,function(i,partition){
+  length(which(partition==i))
+}, partition=partition)
+
+weight.union<- sapply(1:np,function(i,partition,weights){
+  sum(weights[which(partition==i)])
+}, partition=partition,weights=weights)
 
 
-jug<-1
-sh<-c()
-for(jug in 1:length(weights)){
-  i.union<-partition[jug]
+num.results<- sapply(1:length(weights),function(jug,n,weights,partition,tam.union,weight.union){
+i.union<-partition[jug]
 vector.weight.iunion<-weights[which(partition==i.union)]        
 weighti<-vector.weight.iunion[which(which(partition==i.union)==jug)]
 vector.weight.iunion<-vector.weight.iunion[-which(which(partition==i.union)==jug)] 
@@ -26,7 +32,7 @@ vector.weight.union<-weight.union[-i.union]
 vector.weight<-c(vector.weight.iunion,vector.weight.union)
 
 
-iz<-length(vector.weight.iunion)
+iz<-length(vector.weight.iunion) 
 it<-length(vector.weight.union)
 
 pi<-iz+1
@@ -60,9 +66,12 @@ pl<-(factorial(p1arrayii[,3])*factorial(pi-p1arrayii[,3]-1)/factorial(pi))
 shi<-sum(p1arrayii[,4]*pr*pl)
 
 
-sh[jug]<-shi
+}, n=n,weights=weights,partition=partition,tam.union=tam.union,weight.union=weight.union)
 
-}
+
+sh<-num.results
+
+
 
 result<-list()
 names.result<-c()

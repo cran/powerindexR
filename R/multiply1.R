@@ -10,4 +10,4 @@ multiply1<-function(pol1,pol2){
     }
     res<-rbind(res,aux)
   }
-  return(res)}
+  return(res)} 

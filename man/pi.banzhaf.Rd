@@ -39,8 +39,15 @@ Brams, S. J., & Affuso, P. J. (1976). Power and size: A new paradox. Theory and 
 Livino M. Armijos-Toro, Jose M. Alonso-Meijide, Manuel A. Mosquera, Alejandro Saavedra-Nieves.
 }
 \examples{
+# Example Banzhaf value
 weights<-c(137,85,71,32,9,8,5,2,1) 
 quota<-176
 pi.banzhaf(quota,weights)
 pi.banzhaf(quota,weights,normalized=TRUE)
+
+# Example Banzhaf-Owen value
+quota<-30
+weights<-c(28, 16, 5, 4, 3, 3)
+# Partition={{1},{2,4,6},{3,5}}
+pi.banzhaf(quota,weights,partition=c(1,2,3,2,3,2))
 }

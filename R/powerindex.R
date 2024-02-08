@@ -1,16 +1,23 @@
 powerindex <-
 function(quota,weights,index=c("S","B","J","CM","JCM"),partition=NULL,quasiminimal=FALSE,minimal=FALSE,normalized=FALSE,swing=FALSE){
 
-
+  if (sum(weights)<quota){
+    stop("The quota is greater than the sum of the weights. Please, introduce valid parameters.")
+  }  
+  
+  if (round(quota,5)==0){
+    stop("The quota is zero. Please, introduce valid parameters.")
+  }  
+ 
 if (missing(quota)&missing(weights)){
 message("Please, introduce a quota and a distribution of weights.")
 } else {
 if (missing(index)&((quasiminimal==TRUE)|(minimal==TRUE))){
 if (quasiminimal==TRUE){
-res<-pi.johnston(quota,weights,TRUE)[2:3]
+res<-QMWC(quota,weights)
 }
 if (minimal==TRUE){
-res<-pi.colomermartinez(quota,weights,TRUE)[2:3]
+res<-MWC(quota,weights)
 }
 } else {
 if (index=="B"){
