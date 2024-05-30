@@ -1,6 +1,8 @@
 powerindex <-
 function(quota,weights,index=c("S","B","J","CM","JCM"),partition=NULL,quasiminimal=FALSE,minimal=FALSE,normalized=FALSE,swing=FALSE){
 
+  if (missing(index)){index=c("S")}
+  
   if (sum(weights)<quota){
     stop("The quota is greater than the sum of the weights. Please, introduce valid parameters.")
   }  
